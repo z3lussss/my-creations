@@ -17,14 +17,14 @@ setInterval(nextSlide, 3000);
 
 document.getElementById('submit-btn').addEventListener('click', function() {
     const dateInput = document.getElementById('name-input').value.trim();
-    if (dateInput) {
+    if (dateInput === "70126") {
         // Show the date in the letter
         document.getElementById('date-display').textContent = dateInput;
-        
+
         // Transition to letter page
         goToLetterPage();
     } else {
-        alert('Please enter a date.');
+        alert('Please enter the correct code.');
     }
 });
 
